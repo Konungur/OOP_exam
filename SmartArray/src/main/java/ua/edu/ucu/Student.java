@@ -15,6 +15,10 @@ class Student {
         this.surname = surname;
     }
 
+    public boolean equals(Student obj) {
+        return this.name.equals(obj.getName()) && this.surname.equals(obj.getSurname());
+    }
+
     public double getGPA() {
         return GPA;
     }
